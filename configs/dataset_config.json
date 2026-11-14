@@ -1,0 +1,31 @@
+{
+    "project": "InfraGuard AI",
+    "version": "0.2",
+    "dataset": "ibm-research/cif-dataset",
+    "seed": 42,
+    "shuffle_buffer": 1024,
+    "image_format": "JPEG",
+    "annotation_format": "COCO",
+    "categories": {
+        "1": "Algae",
+        "2": "Crack",
+        "3": "Net-Crack",
+        "4": "Crack with Precipitation",
+        "5": "Rust",
+        "6": "Spalling"
+    },
+    "splits": {
+        "train": {
+            "source_config": "train_tiled",
+            "target_images": 500
+        },
+        "val": {
+            "source_config": "val_tiled",
+            "target_images": 100
+        },
+        "test": {
+            "source_config": "test_tiled",
+            "target_images": 100
+        }
+    }
+}
