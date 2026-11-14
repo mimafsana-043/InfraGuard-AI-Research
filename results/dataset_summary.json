@@ -1,0 +1,48 @@
+{
+    "project": "InfraGuard AI",
+    "version": "0.2",
+    "dataset": "ibm-research/cif-dataset",
+    "seed": 42,
+    "shuffle_buffer": 1024,
+    "sampling_method": "Hugging Face streaming buffer shuffle",
+    "splits": {
+        "train": {
+            "images": 500,
+            "instances": 557,
+            "class_distribution": {
+                "Algae": 209,
+                "Crack": 299,
+                "Net-Crack": 21,
+                "Crack with Precipitation": 11,
+                "Rust": 1,
+                "Spalling": 16
+            }
+        },
+        "val": {
+            "images": 100,
+            "instances": 186,
+            "class_distribution": {
+                "Algae": 30,
+                "Crack": 15,
+                "Net-Crack": 9,
+                "Crack with Precipitation": 0,
+                "Rust": 59,
+                "Spalling": 73
+            }
+        },
+        "test": {
+            "images": 100,
+            "instances": 110,
+            "class_distribution": {
+                "Algae": 51,
+                "Crack": 54,
+                "Net-Crack": 2,
+                "Crack with Precipitation": 1,
+                "Rust": 1,
+                "Spalling": 1
+            }
+        }
+    },
+    "total_images": 700,
+    "total_instances": 853
+}
